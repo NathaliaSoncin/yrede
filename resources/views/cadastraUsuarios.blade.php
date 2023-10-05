@@ -18,13 +18,23 @@
 
     <h1 class="w-full text-center text-x1 font-bold">Cadastro de Usuários</h1>
 
-    <form class="card-body max-w-md m-auto" action="" method="post">
+    <form class="card-body max-w-md m-auto m-a" action="{{route('salva-usuario')}}" method="post">
+
+    @csrf 
+
+    <div class="form-control">
+      <label class="label">
+      <span class="label-text font-bold"> Nome</span>
+      </label>
+      <input name=nome type="text" placeholder="nome" class="input input-bordered" required/>
+
+</div>
 
      <div class="form-control">
       <label class="label">
       <span class="label-text font-bold"> Usuário</span>
       </label>
-      <input type="text" placeholder="usuario" class="input input-bordered" required/>
+      <input name=usuario type="text" placeholder="usuario" class="input input-bordered" required/>
 
 </div>
 
@@ -32,17 +42,10 @@
       <label class="label">
       <span class="label-text font-bold">Bio</span>
       </label>
-      <input type="text" placeholder="usuario" class="input input-bordered" required/>
+      <input name=bio type="text" placeholder="usuario" class="input input-bordered" required/>
 
 </div>
 
-<div class="form-control">
-      <label class="label">
-      <span class="label-text font-bold"> Nome</span>
-      </label>
-      <input type="text" placeholder="usuario" class="input input-bordered" required/>
-
-</div>
 
 <div class="form-control">
       <label class="label">
@@ -59,6 +62,8 @@
       <input type="password" placeholder="usuario" class="input input-bordered" required/>
 
 </div>
+
+<button class="btn btn-success">salvar </button>
     </form>
 
 
