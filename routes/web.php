@@ -30,3 +30,5 @@ Route::get('/lista-usuarios', function () {
 
 })->name('lista-usuarios');
 
+Route::view('/cadastra-usuario', 'cadastraUsuarios');
+
