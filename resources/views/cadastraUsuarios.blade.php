@@ -51,7 +51,7 @@
       <label class="label">
       <span class="label-text font-bold"> Email</span>
       </label>
-      <input type="email" placeholder="usuario" class="input input-bordered" required/>
+      <input name=email type="email" placeholder="usuario" class="input input-bordered" required/>
 
 </div>
 
@@ -59,7 +59,7 @@
       <label class="label">
       <span class="label-text font-bold">Senha</span>
       </label>
-      <input type="password" placeholder="usuario" class="input input-bordered" required/>
+      <input name=senha type="password" placeholder="usuario" class="input input-bordered" required/>
 
 </div>
 
