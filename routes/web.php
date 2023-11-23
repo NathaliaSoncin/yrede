@@ -4,6 +4,7 @@ use App\Models\Post;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -92,18 +93,22 @@ Route::middleware(['auth'])->group(function () {
     });
 });
 
-Route::view('/criar-post','criaPost');
+    Route::middleware(['auth'])->group(function (){
 
-Route::post('/salva-post', function (Request $request){
+    Route::view('post', 'criaPost');
 
-    $post = new Post();
+    Route::post('/salva-post', function (Request $request){
 
-    $post->user_id= Auth::id();
+        $post = new Post();
 
-    $post->mensagem = $request->mensagem;
+        $post->user_id= Auth::id();
 
-    $post->save();
+        $post->mensagem = $request->mensagem;
 
-    return redirect('/');
+        $post->save();
 
+        return redirect('/');
+
+    });
 });
+
