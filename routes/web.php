@@ -79,7 +79,7 @@ Route::post('/logar', function (Request $request){
 });
 
 Route::middleware(['auth'])->group(function () {
-    Route::view('/criar-post', 'criarPost');
+    Route::view('/cria-post', 'criaPost');
     Route::post('/salva-post', function (Request $request){
         $post = new Post();
 
