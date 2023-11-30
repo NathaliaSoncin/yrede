@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name viewport >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova Postagem</title>
+    <title>Nova Postagem </title>
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.4/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
@@ -14,53 +14,50 @@
 </head>
 <body>
 
+<!DOCTYPE html>
 
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-  <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-      <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-  </a>
-  <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-      <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>
-      <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
-        <span class="sr-only">Menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-    </button>
-  </div>
-  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
-    <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-      <li>
-        <a href="#" class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500" aria-current="page">Home</a>
-      </li>
-      <li>
-        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
-      </li>
-      <li>
-        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 d:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
-      </li>
-      <li>
-        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-      </li>
-    </ul>
-  </div>
-  </div>
-</nav>
+<html lang="en">
 
-    <form action="/salva-post"method="POST">
+<head>
+  
+    <meta charset="UTF-8">
 
-    @csrf
-
-    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <button type="button" class="text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Postar</button>
-    </form>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.4/dist/full.min.css" rel="stylesheet" type="text/css"/>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Postagem</title>
+
+</head>
+
+<body>
+
+    <div class="hero min-h-screen bg-black-600 p-7">
+
+    <form action="/salva-post" method="post">
+
+ @csrf
+    
+      <h7 class="text-5xl font-bold text-center justify-center flex p-5">Se você deseja o bem seja bem-vindo.</h7> <br>
+
+  <div class="p-11 flex justify-around ">
+    <img  src="https://th.bing.com/th/id/R.3a372dcde7b56309e2b61e69753798a9?rik=2JdEMxFUALZELg&riu=http%3a%2f%2f4.bp.blogspot.com%2f-PqjlmXB2KzU%2fUAeju20SzjI%2fAAAAAAAAEYo%2ftjpgdUrsAb8%2fs1600%2fPurple%2bDaisy%2bTumblr%2bBackgrounds%2b%2525282%252529.jpg&ehk=mOteXiQhC%2fFQ2K%2faljlrSK3SZe5eJRm2owMmSBe%2bwLo%3d&risl=&pid=ImgRaw&r=0" class="max-m-sm rounded-lg shadow-2xl border-b-3 border-teal-300" />
+
+    <p class="p-6 "></p>
+
+    <textarea placeholder="Bio" name="mensagem" class="shadow-lg rounded-lg textarea textarea-bordered textarea-lg w-full max-w-xs" ></textarea>
+
+    <button class="flex items-center justify-center p-3 shadow-lg rounded-r-3xl border border-teal-300 bg-teal-600" type="submit"> postar</button>
+  
+  </div>
+          
+         
+</div>
 </body>
-
 </html>
 
 
