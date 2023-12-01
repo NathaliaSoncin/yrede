@@ -40,21 +40,59 @@
 
     <form action="/salva-post" method="post">
 
- @csrf
-    
-      <h7 class="text-5xl font-bold text-center justify-center flex p-5">Se você deseja o bem seja bem-vindo.</h7> <br>
 
-  <div class="p-11 flex justify-around ">
-    <img  src="https://th.bing.com/th/id/R.3a372dcde7b56309e2b61e69753798a9?rik=2JdEMxFUALZELg&riu=http%3a%2f%2f4.bp.blogspot.com%2f-PqjlmXB2KzU%2fUAeju20SzjI%2fAAAAAAAAEYo%2ftjpgdUrsAb8%2fs1600%2fPurple%2bDaisy%2bTumblr%2bBackgrounds%2b%2525282%252529.jpg&ehk=mOteXiQhC%2fFQ2K%2faljlrSK3SZe5eJRm2owMmSBe%2bwLo%3d&risl=&pid=ImgRaw&r=0" class="max-m-sm rounded-lg shadow-2xl border-b-3 border-teal-300" />
+ @csrf
+
+      <h7 class="text-5xl font-bold text-center justify-center flex p-5 text-fuchsia-200 underline font-sans bg-pink-100">Se você deseja o bem seja bem-vindo.</h7> <br>
+      
+
+      <div class="shadow-md ..."></div>
+
+  <div class="p-2- flex justify-around ">
+
 
     <p class="p-6 "></p>
 
-    <textarea placeholder="Bio" name="mensagem" class="shadow-lg rounded-lg textarea textarea-bordered textarea-lg w-full max-w-xs" ></textarea>
+    <div class="card card-side bg-base-100 shadow-xl">
 
-    <button class="flex items-center justify-center p-3 shadow-lg rounded-r-3xl border border-teal-300 bg-teal-600" type="submit"> postar</button>
+    
+    <figure><img src="https://th.bing.com/th/id/OIP.Bdapc2vdCne9DoA79jrW5wHaHa?rs=1&pid=ImgDetMain bg-pink-200" alt="Movie"/></figure>
+
+  <div class="card-body">
+
+    <h2 class="card-title text-center text-5xl font-bold text-center justify-center flex p-5 text-purple-400 underline">Frases Tumblr</h2>
+
+    <p>Ame, sorria e seja feliz. A vida é muito curta para ficarmos Lamentando</p>
+
+    <p class="text-purple-600">O sorriso é a manifestação dos lábios, quando os olhos encontram o que o coração procura..</p>
+
+    <h2 class="card-title"></h2>
+
+    <p>Os melhores momentos na vida são como os arcos-íris: aparecem quando você menos espera.</p>
+
+    <p class="text-purple-600">Viver é como andar de bicicleta. Para ter equilíbrio você tem que se manter em movimento.</p>
+
+    <h2 class="card-title"></h2>
+
+    <p>Que minha coragem seja maior que meu medo e que minha força seja tão grande quanto minha fé.</p>
+
+    <p class="text-purple-600 ">A felicidade está nas pequenas coisas e escondida nos mais simples sorrisos..</p>
+
+
+    <div class="card-actions justify-end">
+
+    <h2 class="card-title"></h2>
+
+    <p>Prefira o sorriso, faz bem a você e aos que estão ao seu redor. Dê risada de tudo, de si mesmo. Não adie alegrias. Seja feliz hoje!</p>
+
+
+    </div>
+  </div>
+</div>
   
   </div>
           
+  
          
 </div>
 </body>

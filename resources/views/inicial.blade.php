@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
 
+
+
     <meta charset="UTF-8">
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,30 +16,23 @@
     <title>Inicial</title>
 
 </head>
-
-<body>
   
-<div class="bg-pink-100">
 
   <div class="p-10 flex justify-around">
 
-    <img src="https://th.bing.com/th/id/OIP.0-YUS2TvE_0P8fchTcJq4AHaEK?rs=1&pid=ImgDetMain" 
+  <h7 class="card-title text-center text-5x1 font-bold text-center italic font-serif text-lg decoration-dashed decoration-auto rounded-r-3xl shadow-xl  flex p-6 text-purple-400 underline font-mono bg-fuchsia-100 border-">É muito bom ter você aqui seja bem-vindo</h7><div>
 
+    <img src="https://th.bing.com/th/id/OIP.1rABdySOeT1XZPzyhkTPxwHaHa?rs=1&pid=ImgDetMain" 
+    
+  
     class="max-w-sm rounded-lg shadow-1x9 " />
 
-  <h7 class="font-bold flex items-center">É muito bom ter você aqui seja bem-vindo</h7><div>
 
-  <a class="btn" href="/cadastrausuarios">Criar Conta</a>
+  <a class="btn card-title text-center text-5x1 font-bold text-center italic font-serif text-lg decoration-dashed decoration-auto rounded-r-3xl shadow-xl  flex p-6 text-purple-400  font-mono bg-fuchsia-100 border-" href="/cadastrausuarios">Criar Conta</a>
 
-  <a class="btn" href="/login">Login</a>
+  <a class="btn card-title text-center text-5x1 font-bold text-center italic font-serif text-lg decoration-dashed decoration-auto rounded-r-3xl shadow-xl  flex p-6 text-purple-400  font-mono bg-fuchsia-100 border-" href="/login">Login</a>
 
-  <a class="btn" href="/post">Nova Postagem</a> </div>
-  
-
-  </div>
-  <p class="text-purple-400 whitespace-ligth text-purple-400 ">Sempre é uma alergia imensa ter você por perto! Seja muito bem-vindo.<p>
-
-</div>
+  <a class="btn card-title text-center text-5x1 font-bold text-center italic font-serif text-lg decoration-dashed decoration-auto rounded-r-3xl shadow-xl  flex p-6 text-purple-400 font-mono bg-fuchsia-100 border-" href="/post">Nova Postagem</a> </div>
 
 @foreach ($posts as $post)
 
